@@ -22,7 +22,7 @@
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="9dp"
@@ -31,12 +31,13 @@
         android:background="@drawable/marco"
         android:ems="10"
         android:hint="Contraseña"
-        android:textColorHint="@color/oscuro"
+        android:textColor="@color/DimGray"
         android:inputType="textPassword"
         android:padding="10dp"
+        android:textColorHint="@color/oscuro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
@@ -50,6 +51,7 @@
         android:background="@drawable/marco"
         android:ems="10"
         android:hint="Usuario"
+        android:textColor="@color/DimGray"
         android:textColorHint="@color/oscuro"
         android:inputType="textPersonName"
         android:padding="10dp"
@@ -82,6 +84,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
-        android:background="@drawable/boton_redondo"/>
+        android:background="@drawable/borde_boton"/>
 
 </android.support.constraint.ConstraintLayout>

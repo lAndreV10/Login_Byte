@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="azulito">#0A2459</color>
     <color name="oscuro">#2699FB</color>
+    <color  name="DimGray">#696969</color>
 </resources>
