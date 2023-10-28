@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".Registro_activity"
     android:background="@color/white">
 
     <ImageView
@@ -21,7 +21,7 @@
         app:srcCompat="@drawable/img" />
 
     <EditText
-        android:id="@+id/inicicontra"
+        android:id="@+id/registro_usuario"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
@@ -31,18 +31,18 @@
         android:background="@drawable/marco"
         android:ems="10"
         android:hint="@string/contra"
-        android:textColor="@color/DimGray"
         android:inputType="textPassword"
         android:padding="10dp"
+        android:textColor="@color/DimGray"
         android:textColorHint="@color/oscuro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iniciousuario" />
+        app:layout_constraintTop_toBottomOf="@+id/registro_contra" />
 
     <EditText
-        android:id="@+id/iniciousuario"
+        android:id="@+id/registro_contra"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
@@ -51,39 +51,26 @@
         android:background="@drawable/marco"
         android:ems="10"
         android:hint="@string/user_name"
-        android:textColor="@color/DimGray"
-        android:textColorHint="@color/oscuro"
         android:inputType="textPersonName"
         android:padding="10dp"
+        android:textColor="@color/DimGray"
+        android:textColorHint="@color/oscuro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <Button
-        android:id="@+id/btninicio"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="50dp"
-        android:background="@drawable/borde_boton"
-        android:text="@string/ingresar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inicicontra" />
 
     <Button
         android:id="@+id/btnregistro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="120dp"
         android:layout_marginEnd="50dp"
+        android:background="@drawable/borde_boton"
         android:text="@string/registrate"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inicicontra"
-        android:background="@drawable/borde_boton"/>
+        app:layout_constraintTop_toBottomOf="@+id/registro_contra" />
 
 </android.support.constraint.ConstraintLayout>
