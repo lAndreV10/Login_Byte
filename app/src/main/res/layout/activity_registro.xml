@@ -7,6 +7,25 @@
     tools:context=".Registro_activity"
     android:background="@color/white">
 
+    <EditText
+        android:id="@+id/registro_contrasena"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/marco"
+        android:ems="10"
+        android:hint="@string/contra"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/DimGray"
+        android:textColorHint="@color/oscuro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registro_usuario" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
@@ -21,13 +40,12 @@
         app:srcCompat="@drawable/img" />
 
     <EditText
-        android:id="@+id/registro_usuario"
+        android:id="@+id/confcontrasena"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="304dp"
         android:background="@drawable/marco"
         android:ems="10"
         android:hint="@string/contra"
@@ -35,14 +53,13 @@
         android:padding="10dp"
         android:textColor="@color/DimGray"
         android:textColorHint="@color/oscuro"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registro_contra" />
+        app:layout_constraintTop_toBottomOf="@+id/registro_contrasena" />
 
     <EditText
-        android:id="@+id/registro_contra"
+        android:id="@+id/registro_usuario"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
@@ -59,18 +76,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
+
     <Button
         android:id="@+id/btnregistro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="50dp"
         android:background="@drawable/borde_boton"
         android:text="@string/registrate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registro_contra" />
+        app:layout_constraintTop_toBottomOf="@+id/confcontrasena" />
 
 </android.support.constraint.ConstraintLayout>

@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
+            android:name=".Home_activity"
+            android:exported="false" />
+        <activity
+            android:name=".inicio_activity"
+            android:exported="false" />
+        <activity
             android:name=".Registro_activity"
             android:exported="false" />
         <activity
